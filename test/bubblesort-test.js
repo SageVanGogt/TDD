@@ -13,8 +13,15 @@ describe ('bubblesort', function() {
 
   it('should return an array', function() {
     let sortedArray = bubbleSort(unsorted);
-    
+
     assert.equal(sortedArray.length, unsorted.length);
+  });
+
+  it('should sort the array', function() {
+    let sortedByBubbleSortArray = bubbleSort(unsorted);
+    let sortedBySortArray = unsorted.sort();
+
+    assert.equal(sortedByBubbleSortArray, sortedBySortArray);
   });
 
 
