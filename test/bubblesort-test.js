@@ -3,7 +3,7 @@ const expect = chai.expect;
 const assert = chai.assert;
 const bubbleSort = require('./../lib/bubblesort');
 const arrayGenerator = require('./../lib/arrayGenerator');
-const unsorted = arrayGenerator(10);
+const unsorted = arrayGenerator(15000);
 
 describe ('bubblesort', function() {
 
