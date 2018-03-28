@@ -3,8 +3,7 @@ const assert = chai.assert;
 const expect = chai.expect;
 const mergeSort = require('./../lib/mergesort');
 const arrayGenerator = require('./../lib/arrayGenerator');
-const unsorted = arrayGenerator(15000);
-// const unsorted = [10, 9, 8, 5, 1, 4, 2];
+const unsorted = arrayGenerator(110000);
 
 chai.use(require("chai-sorted"));
 
