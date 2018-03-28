@@ -1,8 +1,11 @@
 const chai = require('chai');
 const assert = chai.assert;
+const expect = chai.expect;
 const insertionSort = require('./../lib/insertionsort');
 const arrayGenerator = require('./../lib/arrayGenerator');
 const unsorted = arrayGenerator(15000);
+
+chai.use(require("chai-sorted"));
 
 describe ('insertion sort', function() {
 
@@ -18,9 +21,8 @@ describe ('insertion sort', function() {
 
   it('should sort the array', function() {
     let sortedByInsertionSortArray = insertionSort(unsorted);
-    let sortedBySortArray = unsorted.sort();
 
-    assert.equal(sortedByInsertionSortArray, sortedBySortArray);
+    expect(sortedByInsertionSortArray).to.be.sorted();
   });
 
 

@@ -1,8 +1,11 @@
 const chai = require('chai');
 const assert = chai.assert;
+const expect = chai.expect;
 const bubbleSort = require('./../lib/bubblesort');
 const arrayGenerator = require('./../lib/arrayGenerator');
 const unsorted = arrayGenerator(15000);
+
+chai.use(require("chai-sorted"));
 
 describe ('bubblesort', function() {
 
@@ -18,9 +21,8 @@ describe ('bubblesort', function() {
 
   it('should sort the array', function() {
     let sortedByBubbleSortArray = bubbleSort(unsorted);
-    let sortedBySortArray = unsorted.sort();
 
-    assert.equal(sortedByBubbleSortArray, sortedBySortArray);
+    expect(sortedByBubbleSortArray).to.be.sorted();
   });
 
 
