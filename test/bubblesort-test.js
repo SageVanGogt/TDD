@@ -1,5 +1,4 @@
 const chai = require('chai');
-const expect = chai.expect;
 const assert = chai.assert;
 const bubbleSort = require('./../lib/bubblesort');
 const arrayGenerator = require('./../lib/arrayGenerator');
