@@ -25,5 +25,11 @@ describe ('bubblesort', function() {
     expect(sortedByBubbleSortArray).to.be.sorted();
   });
 
+  it('should sort letters', function() {
+    let letters = ['b', 'z', 'c', 'g', 'h', 'n', 'r', 'e'];
+    let sortedByBubbleSortArray = bubbleSort(letters);
 
+    expect(sortedByBubbleSortArray).to.be.sorted();
+  });
+  
 });

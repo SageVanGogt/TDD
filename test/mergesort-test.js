@@ -25,5 +25,11 @@ describe ('merge sort', function() {
     expect(sortedByMergeSortArray).to.be.sorted();
   });
 
+  it('should sort letters', function() {
+    let letters = ['b', 'z', 'c', 'g', 'h', 'n', 'r', 'e'];
+    let sortedByMergeSortArray = mergeSort(letters);
 
+    expect(sortedByMergeSortArray).to.be.sorted();
+  });
+  
 });

@@ -25,5 +25,11 @@ describe ('insertion sort', function() {
     expect(sortedByInsertionSortArray).to.be.sorted();
   });
 
+  it('should sort letters', function() {
+    let letters = ['b', 'z', 'c', 'g', 'h', 'n', 'r', 'e'];
+    let sortedByInstertionSortArray = insertionSort(letters);
 
+    expect(sortedByInstertionSortArray).to.be.sorted();
+  });
+  
 });

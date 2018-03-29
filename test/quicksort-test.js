@@ -25,5 +25,11 @@ describe ('quick sort', function() {
     expect(sortedByQuickSortArray).to.be.sorted();
   });
 
+  it('should sort letters', function() {
+    let letters = ['b', 'z', 'c', 'g', 'h', 'n', 'r', 'e'];
+    let sortedByQuickSortArray = quickSort(letters);
+
+    expect(sortedByQuickSortArray).to.be.sorted();
+  });
 
 });
