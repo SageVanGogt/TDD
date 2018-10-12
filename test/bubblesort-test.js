@@ -14,6 +14,7 @@ describe ('bubblesort', function() {
   });
 
   it('should return an array', function() {
+
     let sortedArray = bubbleSort(unsorted);
 
     assert.equal(sortedArray.length, unsorted.length);
